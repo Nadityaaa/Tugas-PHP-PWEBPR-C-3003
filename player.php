@@ -36,8 +36,10 @@ $koneksi=mysqli_connect('localhost','root','','user_db');
         </div>
         <div class="flex-row">
             <div class="box-big">
-                <h1 style="margin: 40px 0px 0px 40px;">Hello, welcome to PlayBox</h1>
-                <div class="tabel">
+                <!-- <button class="btn-update">Update</button>
+                <button class="btn-delete" class="flex-row">Delete</button> -->
+                <!-- <h1 style="margin: 40px 0px 0px 40px;">Hello, welcome to PlayBox</h1> -->
+                <div class="tabel" style="margin-top: 90px;">
                     <table border="1">
                         <tr>
                             <th>ID</th>
@@ -46,6 +48,7 @@ $koneksi=mysqli_connect('localhost','root','','user_db');
                             <th>Start</th>
                             <th>End</th>
                             <th>Price</th>
+                            <th>Action</th>
                         </tr>
                         <?php
                         $no = 1;
@@ -59,10 +62,19 @@ $koneksi=mysqli_connect('localhost','root','','user_db');
                                 <td><?= $tampil_data['play_time']; ?></td>
                                 <td><?= $tampil_data['end_time']; ?></td>
                                 <td><?= $tampil_data['harga']; ?></td>
+                                <td class="flex-column" style="gap: 5px;">
+                                <button class="option">
+                                    <a href="update.php" style="color: #000000; text-decoration: none;">Update</a>
+                                </button>
+                                <button class="option">
+                                    <a href="#" style="color: #000000; text-decoration: none;">Delete</a>
+                                </button>
+                                </td>
                             </tr>
                         <?php } ?>
                     </table>
                 </div>
+                <!-- <button class="btn-create">+</button> -->
             </div>
         </div>
     </div>

@@ -76,11 +76,26 @@
 }
 .tabel{
     width: 656px;
-    height: 486px;
-    margin-top: 20px;
+    height: 536px;
+    margin-top: 30px;
     margin-left: 45px;
     background-color: #FFFDE9;
     border-radius: 22px;
+    overflow: auto;
+}
+.option{
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: #A19A53;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+.option:hover{
+    cursor: pointer;
+    background-color: #484525;
 }
 .btn-create{
     width: 50px;
@@ -158,6 +173,46 @@
     cursor: pointer;
     background-color: #9F9B70;
 }
+label{
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 151px;
+}
+input{
+    width: 452px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 35px;
+    border: 1px solid #484525;
+    background-color: #FFFDE9;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    text-indent: 23px;
+}
+.input::-webkit-input-placeholder{
+    color: #CDC792;
+}
+.btn-simpan{
+    width: 252px;
+    height: 50px;
+    margin-left: 250px;
+    margin-bottom: 10px;
+    border-radius: 35px;
+    border: 0px;
+    background-color: #A19A53;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+.btn-simpan:hover{
+    cursor: pointer;
+    background-color: #484525;
+}
 
 table{
     border-collapse: separate;
@@ -188,3 +243,85 @@ tr:last-child td:last-child { border-bottom-right-radius: 20px; }
 
 tr:first-child th { border-top-style: solid; }
 tr td:first-child { border-left-style: solid; }
+
+#profile-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+@mixin object-center($nama, $display) {
+    display: $display;
+    justify-content: center;
+    align-items: center;
+    font-family: $nama;
+}
+
+:root{
+    --circleSize: 165px;
+    --radius: 100px;
+    --shadow: 0 0 10px 0 rgba(255, 255, 255, 0.35);
+    --fontColor: rgb(250, 250, 250);
+} 
+
+.profile-pic {
+    color: transparent;
+    transition: all 0.3s ease;
+    @include object-center("Maxim", flex);
+    position: relative;
+    transition: all 0.3s ease;
+
+    input {
+        display: none;
+    }
+
+    img {
+        position: absolute;
+        object-fit: cover;
+        width: var(--circleSize);
+        height: var(--circleSize);
+        box-shadow: var(--shadow);
+        border-radius: var(--radius);
+        z-index: 0;
+    }
+
+    .-label {
+        cursor: pointer;
+        height: var(--circleSize);
+        width: var(--circleSize);
+    }
+    
+    &:hover {
+        .-label {
+            @include object-center("Maxim", flex);
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 10000;
+            color: var(--fontColor);
+            transition: background-color 0.2s ease-in-out;
+            border-radius: var(--radius);
+            margin-bottom: 0;
+        }
+    }
+
+    span {
+        display: inline-block;
+        padding: 8px;
+        height: 2em;
+        text-indent: 4px;
+    }
+}
+
+body {
+height: 100vh;
+background-color: rgb(25, 24, 21);
+@include object-center("Maxim", flex);
+
+    a:hover {
+        text-decoration: none;
+    }
+}

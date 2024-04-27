@@ -54,7 +54,7 @@
 }
 .desc{
     font-size: 16px;
-    margin-top: 12px;
+    margin-top: 4px;
     margin-left: 45px;
     margin-bottom: 38px;
 }
@@ -106,6 +106,6 @@ input{
 .pic{
     width: 552px;
     height: 648px;
-    margin-top: -578px;
+    margin-top: -486px;
     margin-left: 625px;
 }
