@@ -15,24 +15,24 @@
                 <img src="Asset/user.png" alt="" class="user">
                 <h1 class="username">Lily Miranda</h1>
                 <button class="btn-menu">
-                    <a href="dashboard.html" style="color: black; text-decoration: none;">Dashboard</a></button>
+                    <a href="dashboard.php" style="color: black; text-decoration: none;">Dashboard</a></button>
                 <button class="btn-menu">
-                    <a href="player.html" style="color: black; text-decoration: none;">Data Player</a>
+                    <a href="player.php" style="color: black; text-decoration: none;">Data Player</a>
                 </button>
                 <button class="btn-menu">
-                    <a href="create.html" style="color: black; text-decoration: none;">Add Data</a>
+                    <a href="create.php" style="color: black; text-decoration: none;">Add Data</a>
                 </button>
                 <button class="btn-menu">
-                    <a href="account.html" style="color: black; text-decoration: none;">Account</a>
+                    <a href="account.php" style="color: black; text-decoration: none;">Account</a>
                 </button>
                 <button class="btn-logout">
-                    <a href="index.html" style="color: black; text-decoration: none;">LogOut</a>
+                    <a href="index.php" style="color: black; text-decoration: none;">LogOut</a>
                 </button>
             </div>
         </div>
         <div class="flex-row">
             <div class="box-big">
-                <form action="dashboard.html" method="post">
+                <form action="dashboard.php" method="post">
                     <h1 style="text-align: center; margin-top: 60px; margin-bottom: 30px;">Update data player</h1>
                     <label for="nama">Nama player</label>
                     <input id="nama" name="nama" type="text" placeholder="Input nama ..." required>

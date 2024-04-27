@@ -36,9 +36,6 @@ $koneksi=mysqli_connect('localhost','root','','user_db');
         </div>
         <div class="flex-row">
             <div class="box-big">
-                <!-- <button class="btn-update">Update</button>
-                <button class="btn-delete" class="flex-row">Delete</button> -->
-                <!-- <h1 style="margin: 40px 0px 0px 40px;">Hello, welcome to PlayBox</h1> -->
                 <div class="tabel" style="margin-top: 90px;">
                     <table border="1">
                         <tr>
@@ -74,7 +71,6 @@ $koneksi=mysqli_connect('localhost','root','','user_db');
                         <?php } ?>
                     </table>
                 </div>
-                <!-- <button class="btn-create">+</button> -->
             </div>
         </div>
     </div>

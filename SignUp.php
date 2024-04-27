@@ -48,7 +48,7 @@ if(isset($_POST['submit'])){
 <body>
     <div class="container">
         <div class="box-form">
-            <form action="signup.html" method="post">
+            <form action="signup.php" method="post">
                 <img src="Asset/logo.png" alt="" class="logo">
                 <h1 class="title">PlayBox</h1>
                 <h1 class="heading">Create to your account</h1>
