@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     justify-items: center;
-    background-image: url(Asset/Background.png);
+    background-image: url(../../pages/Asset/Background.png);
     padding: 50px 0px;
 }
 .flex-row{
@@ -66,7 +66,7 @@ label{
 }
 input{
     width: 452px;
-    height: 40px;
+    height: 50px;
     display: flex;
     flex-direction: column;
     margin-left: 45px;
@@ -103,11 +103,11 @@ input{
     margin-left: 150px;
 }
 .pic{
-    width: 552px;
-    height: 648px;
+    width: 502px;
+    height: 598px;
     overflow: auto;
-    margin-top: -590px;
-    margin-left: 625px;
+    margin-top: -486px;
+    margin-left: 675px;
 }
 form .error-msg{
     width: 452px;

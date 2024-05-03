@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     justify-items: center;
-    background-image: url(Asset/Background.png);
+    background-image: url(../../pages/Asset/Background.png);
     padding: 50px 0px;
 }
 .flex-row{
@@ -167,7 +167,6 @@
     text-align: center;
     font-size: 16px;
     font-weight: 700;
-    color: white;
 }
 .btn-logout:hover{
     cursor: pointer;
