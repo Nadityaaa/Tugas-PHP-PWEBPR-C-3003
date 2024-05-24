@@ -2,16 +2,6 @@
 require_once "models/PlayBoxModels.php";
 require_once "function/function.php";
 
-// if (isset($_GET['action']) and $_GET['action'] == 'create') {
-//   PlayBoxController::create();
-// }
-// else if (isset($_GET['action']) and $_GET['action'] == 'update') {
-//   PlayBoxController::update();
-// }
-// else if (isset($_GET['action']) and $_GET['action'] == 'delete') {
-//   PlayBoxController::delete();
-// }
-
 class PlayBoxController{
   
   public function index(){

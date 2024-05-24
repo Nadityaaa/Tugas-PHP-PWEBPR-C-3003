@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +13,8 @@
                 <img src="/Playbox/pages/Asset/logo.png" alt="" class="logo">
                 <h1 class="title">PlayBox</h1>
                 <img src="/Playbox/pages/Asset/user.png" alt="" class="user">
-                <h1 class="username">Lily Miranda</h1>
-                <a href="/PlayBox" style="color: black; text-decoration: none;">
+                <h1 class="username">Naditya Putri Lestari</h1>
+                <a href="dashboard" style="color: black; text-decoration: none;">
                     <button class="btn-menu">Dashboard</button>
                 </a>
                 <a href="player" style="color: black; text-decoration: none;">
@@ -27,8 +26,8 @@
                 <a href="dokumentasi" style="color: black; text-decoration: none;">
                     <button class="btn-menu">Dokumentasi</button>
                 </a>
-                <a href="signin" style="color: black; text-decoration: none;">
-                    <button class="btn-logout">LogOut</button>
+                <a href="logout" onclick="return confirm('Apakah anda yakin untuk keluar?');">
+                    <button type="submit" class="btn-logout" name="logout" id="logout">LogOut</button>
                 </a>
             </div>
         </div>

@@ -1,8 +1,5 @@
 <?php
 require_once ("models/ImageModels.php");
-// if (isset($_GET['action']) and $_GET['action'] == 'create') {
-//   ImageController::create();
-// }
 
 class ImageController{
 

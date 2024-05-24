@@ -109,9 +109,11 @@ input{
     margin-top: -486px;
     margin-left: 675px;
 }
-form .error-msg{
+.error-msg{
     width: 452px;
-    height: 40px;
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 16px;
     display: block;
     background: #484525;
     color: #FFFFFF;
